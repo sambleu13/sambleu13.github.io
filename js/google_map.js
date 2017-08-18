@@ -5,9 +5,11 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-    var myLatlng = new google.maps.LatLng(32.6245, -115.4523);
+    var myLatlng = new google.maps.LatLng(19.432608, -99.133209);
     // 39.399872
     // -8.224454
+    //32.6245, -115.4523 bc
+    //19.432608, -99.133209 cdmx
     
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
