@@ -52,11 +52,9 @@
 	<div id="fh5co-page">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-
-			<h1 id="fh5co-logo"><a href="index.html"><center><div><img src="images/spo2-01.png" class="img-responsive" width="100"></div></center><br><small>Samantha Pantoja Ortiz</small></a></h1>
+			<h1 id="fh5co-title"><a href="index.html">Samantha Pantoja Ortiz</a></h1>
 			<nav id="fh5co-main-menu" role="navigation">
 				<ul>
-					<li><a href="index.html">Inicio</a></li>
 					<li class="fh5co-active"><a href="portfolio.html">Portafolio</a></li>
 					<li><a href="about.html">Acerca</a></li>
 					<li><a href="contact.html">Contacto</a></li>
@@ -69,11 +67,10 @@
    new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,de,el,en,fr,it,ja,ko,pt,ru,sv,zh-CN,zh-TW', layout: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT, autoDisplay: false, multilanguagePage: true}, 'google_translate_element');
  }
   </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        
-				<p><small>&copy; 2017</small></p>
+				<p><small>&copy; 2020</small></p>
 				<ul>
 					<li><a href="https://twitter.com/sambleu13"><i class="icon-twitter2"></i></a></li>
-					<li><a href="http://www.flickr.com/photos/127130235@N08/"><i class="icon-flickr2"></i></a></li>
+					<li><a href="http://www.flickr.com/photos/sambleu13/"><i class="icon-flickr2"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/samantha-pantoja-ortiz/"><i class="icon-linkedin2"></i></a></li>
 				</ul>
 			</div>
@@ -82,7 +79,17 @@
 
 		<div id="fh5co-main">
 			<div class="fh5co-narrow-content">
-				<div class="row row-bottom-padded-md">
+				<br>
+				<div class="row row-bottom-padded-sm">
+					<div id="myBtnContainer">
+					  <button class="btn active" onclick="filterSelection('all')"> Todo </button>
+					  <button class="btn" onclick="filterSelection('video')"> Video</button>
+					  <button class="btn" onclick="filterSelection('programacion')"> Programación</button>
+					  <button class="btn" onclick="filterSelection('foto')"> Fotografía</button>
+					  <button class="btn" onclick="filterSelection('diseno')"> Diseño</button>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md contain-filter">
 					<!-- <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
 						<a href="http://entumesa.x10host.com/entumesa/" target="_blank" class="work image-popup" style="background-image: url(http://entumesa.x10host.com/entumesa/wp-content/uploads/2017/06/verticalpromo02.jpg);">
 							<div class="desc">
@@ -91,7 +98,63 @@
 							</div>
 						</a>
 					</div> -->
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
+						<a href="https://www.youtube.com/watch?v=xSo8l2OrIKk" target="blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/xSo8l2OrIKk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBivYQ-97fk6hTfaknPxNIn_qnp-g);">
+							<div class="desc">
+								<h3>Día mundial de la creatividad e innovación 2020</h3>
+								<span>Grabación y edición de vídeo</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno">
+						<a href="siglocreativo.html" class="work image-popup" style="background-image: url(https://yt3.ggpht.com/a/AATXAJxgLrMqA0Einqs3X86kC22DXZAKIM9fCdTgNXlL=s100-c-k-c0xffffffff-no-rj-mo);">
+							<div class="desc">
+								<h3>Siglo creativo</h3>
+								<span>Imagen canal</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv foto">
+						<a href="fotodoc.html" class="work image-popup" style="background-image: url(https://live.staticflickr.com/65535/49637435328_5697b074dc_k.jpg);">
+							<div class="desc">
+								<h3>Documental</h3>
+								<span>Fotografía</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno programacion">
+						<a href="http://grupo-ioa.atmosfera.unam.mx/cigom/" target="blank" class="work image-popup" style="background-image: url(http://grupo-ioa.atmosfera.unam.mx/cigom/assets/img/img-inicio/proyectos_img_inicio.jpg);">
+							<div class="desc">
+								<h3>Grupo CCA-UNAM</h3>
+								<span>Diseño y programación web</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
+						<a href="https://www.youtube.com/watch?v=kgiaqGJtyT8" target="blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/kgiaqGJtyT8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB89PUGiAsq7D0CYR6Kqxpwl-z3pQ);">
+							<div class="desc">
+								<h3>Día mundial de la creatividad e innovación 2019</h3>
+								<span>Edición de vídeo</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno programacion">
+						<a href="http://pronosticos.atmosfera.unam.mx/atlasmeteorologico.gom/" target="blank" class="work image-popup" style="background-image: url(http://pronosticos.atmosfera.unam.mx/atlasmeteorologico.gom/img/productos/mosaico-climatologia.jpg);">
+							<div class="desc">
+								<h3>Atlas Meteorológico del Golfo de México</h3>
+								<span>Diseño y programación web</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno programacion">
+						<a href="https://www.revistascca.unam.mx/atm/index.php/atm" target="blank" class="work image-popup" style="background-image: url(https://www.revistascca.unam.mx/atm/public/site/Atmosphere5.jpg);">
+							<div class="desc">
+								<h3>Revista Atmósfera</h3>
+								<span>Implementación diseño reponsivo</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno">
 						<a href="garitas.html" class="work image-popup" style="background-image: url(https://lh3.googleusercontent.com/JOSKwg5sPE6aekYI9eKED8D6AvMm3HGKy37H0Kx_fa6bGlsDcyKbey40Z5BSPGGFytco=w300-rw);">
 							<div class="desc">
 								<h3>GaritasExpress: Border Wait Times</h3>
@@ -99,15 +162,8 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="topgear.html" class="work image-popup" style="background-image: url(https://preview.ibb.co/eGj16k/Captura_de_pantalla_2017_08_24_a_las_20_21_28.png);">
-							<div class="desc">
-								<h3>TOPGEAR CRM</h3>
-								<span>Diseño y programación web</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno">
 						<a href="epifitas.html" class="work image-popup" style="background-image: url(https://c1.staticflickr.com/5/4166/34580055011_5be9089619_c.jpg);">
 							<div class="desc">
 								<h3>Epífitas Vasculares Mexicanas</h3>
@@ -115,23 +171,23 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="wallace.html" class="work image-popup" style="background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/15356527_1170657069681960_2102632770604343246_n.jpg?oh=4c7f830625f1564d16ea6200707c8fe2&oe=5A5D8E66);">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
+						<a href="wallace.html" class="work image-popup" style="background-image: url(https://storage.googleapis.com/ff-storage-p01/press_kits/posters/001/093/095/original/e4288343f6-poster.jpg?1524800582);">
 							<div class="desc">
 								<h3>Wallace</h3>
 								<span>Primer Asistente de Cámara</span>
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="https://vimeo.com/175793113" target="_blank" class="work image-popup" style="background-image: url(http://wammh.com/Images/Events/StoryHour-580x325.aspx);">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
+						<a href="https://www.wammc.org/cak" target="_blank" class="work image-popup" style="background-image: url(https://static.wixstatic.com/media/850e61_58411b1f724c4003b2f073068c670c79~mv2_d_2023_2022_s_2.png/v1/fill/w_214,h_214,al_c,q_85,usm_0.66_1.00_0.01/CAK_logo_finaldraft_circle_edited.webp);">
 							<div class="desc">
 								<h3>Calling All Kids!</h3>
 								<span>Asistente de Producción</span>
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
 						<a href="https://www.youtube.com/watch?v=-VunLJ2zorg" target="_blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/-VunLJ2zorg/hqdefault.jpg);">
 							<div class="desc">
 								<h3>Tick Tock</h3>
@@ -139,7 +195,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv foto">
 						<a href="verano.html" class="work image-popup" style="background-image: url(https://c1.staticflickr.com/4/3704/20173843269_7d6c5b57ce_z.jpg);">
 							<div class="desc">
 								<h3>La feria de verano</h3>
@@ -147,7 +203,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv programacion diseno">
 						<a href="http://gacetainternacional.canal22.org.mx/" target="_blank" class="work image-popup" style="background-image: url(https://c1.staticflickr.com/4/3794/33416322362_e12d6ac30c_z.jpg);">
 							<div class="desc">
 								<h3>Gaceta Internacional Canal 22</h3>
@@ -155,7 +211,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
 						<a href="https://www.youtube.com/watch?v=UcFcJzLBXSk" target="_blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/UcFcJzLBXSk/hqdefault.jpg?);">
 							<div class="desc">
 								<h3>Checklist</h3>
@@ -163,7 +219,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
 						<a href="https://www.youtube.com/watch?v=AQto0aJJcW0" target="_blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/AQto0aJJcW0/hqdefault.jpg);">
 							<div class="desc">
 								<h3>The Night Wanderer</h3>
@@ -171,7 +227,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
 						<a href="https://www.youtube.com/watch?v=zQ4kSXs569U" target="_blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/zQ4kSXs569U/hqdefault.jpg);">
 							<div class="desc">
 								<h3>Words</h3>
@@ -179,7 +235,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
 						<a href="https://youtu.be/UU-cR4rPBAA" target="_blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/UU-cR4rPBAA/hqdefault.jpg);">
 							<div class="desc">
 								<h3>A Yellow Situation</h3>
@@ -187,7 +243,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
 						<a href="https://www.youtube.com/watch?v=ymii8ciZ9WA" target="_blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/ymii8ciZ9WA/hqdefault.jpg);">
 							<div class="desc">
 								<h3>I Follow Rivers</h3>
@@ -195,7 +251,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv foto">
 						<a href="conciertos.html" class="work image-popup" style="background-image: url(https://c1.staticflickr.com/3/2879/32708245633_5626749c71_b.jpg);">
 							<div class="desc">
 								<h3>Conciertos</h3>
@@ -203,15 +259,23 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="http://canal22.org.mx/rio2016/brasil.html" target="_blank" class="work image-popup" style="background-image: url(https://c1.staticflickr.com/4/3725/33323283962_12ce4990e0_z.jpg);">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv programacion">
+						<a href="rio2016.html" class="work image-popup" style="background-image: url(https://c1.staticflickr.com/4/3725/33323283962_12ce4990e0_z.jpg);">
 							<div class="desc">
 								<h3>Brasil - Rio 2016</h3>
 								<span>Diseño Web</span>
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno programacion">
+						<a href="topgear.html" class="work image-popup" style="background-image: url(https://preview.ibb.co/eGj16k/Captura_de_pantalla_2017_08_24_a_las_20_21_28.png);">
+							<div class="desc">
+								<h3>TOPGEAR CRM</h3>
+								<span>Diseño y programación web</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
 						<a href="https://youtu.be/P3toM6J2NnU" target="_blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/P3toM6J2NnU/hqdefault.jpg);">
 							<div class="desc">
 								<h3>Caveat Emptor (scene)</h3>
@@ -219,15 +283,15 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="bajamoot.html" target="_blank" class="work image-popup" style="background-image: url(https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/11216822_854537021326735_3058156348349119975_n.jpg?oh=b9b0dd80c9ba453986acd0bdd343def8&oe=5A2A4A59);">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno">
+						<a href="bajamoot.html" class="work image-popup" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVu5IUjzxqIBqEZLp-8qHtEJUOToA69mdesg&usqp=CAU);">
 							<div class="desc">
 								<h3>Bajamoot 2016</h3>
 								<span>Diseño de identidad</span>
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv foto">
 						<a href="sola.html" class="work image-popup" style="background-image: url(https://c1.staticflickr.com/1/589/22724965802_4196a4ac6b_z.jpg);">
 							<div class="desc">
 								<h3>Día de muertos</h3>
@@ -235,7 +299,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
 						<a href="https://www.youtube.com/watch?v=-OH4Mh_K114" target="_blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/-OH4Mh_K114/hqdefault.jpg);">
 							<div class="desc">
 								<h3>Rock-tarts</h3>
@@ -243,7 +307,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno">
 						<a href="centinela.html" class="work image-popup" style="background-image: url(https://c1.staticflickr.com/4/3750/33095791870_64afda8c5f_z.jpg);">
 							<div class="desc">
 								<h3>Centinela Festival Alternativo</h3>
@@ -251,7 +315,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv diseno foto">
 						<a href="sai.html" class="work image-popup" style="background-image: url(https://c1.staticflickr.com/3/2934/33534686796_6fd5c1ee2b_z.jpg);">
 							<div class="desc">
 								<h3>Sociedad de Alumnos de Ingeniería CETYS</h3>
@@ -259,7 +323,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box filterDiv video">
 						<a href="https://youtu.be/EmpT4u9Bpec" target="_blank" class="work image-popup" style="background-image: url(https://i.ytimg.com/vi/EmpT4u9Bpec/hqdefault.jpg);">
 							<div class="desc">
 								<h3>Late</h3>
@@ -267,7 +331,7 @@
 							</div>
 						</a>
 					</div>
-					
+
 
 
 				</div>
@@ -285,7 +349,50 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
-	
+	<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
